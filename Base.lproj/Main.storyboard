@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ACg-xR-kYI">
+                                <rect key="frame" x="16" y="28" width="103" height="30"/>
+                                <state key="normal" title="给10010打电话">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnClick:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="3ZO-Ka-T1D"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xIa-Fd-WEB">
+                                <rect key="frame" x="16" y="83" width="103" height="30"/>
+                                <state key="normal" title="给10010发短信">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnClick:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="CT0-FH-uz7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YaP-fA-6fD">
+                                <rect key="frame" x="16" y="193" width="90" height="30"/>
+                                <state key="normal" title="访问百度网址">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnClick:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="aq3-7b-PDZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Fx-yA-zeh">
+                                <rect key="frame" x="16" y="243" width="195" height="30"/>
+                                <state key="normal" title="打开百度地图，显示当前位置">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="openMaps:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="RQF-7P-JDz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iXe-31-m43">
+                                <rect key="frame" x="16" y="298" width="195" height="30"/>
+                                <state key="normal" title="打开高德地图，显示当前位置">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="openMaps:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="2pU-5Y-Pc6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qw3-gE-VoY">
+                                <rect key="frame" x="16" y="353" width="185" height="30"/>
+                                <state key="normal" title="打开Google地图，服务关闭">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="openMaps:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="lzi-zg-3uB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e5L-Uv-kHS">
+                                <rect key="frame" x="16" y="408" width="285" height="30"/>
+                                <state key="normal" title="打开腾讯地图，目前只支持网页，后续更新">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="openMaps:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="9pF-6p-zNU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XOi-Jf-YVb">
+                                <rect key="frame" x="16" y="463" width="195" height="30"/>
+                                <state key="normal" title="打开系统地图，显示导航路径">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="openMaps:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Qet-iP-FfA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fve-Cs-Hp4">
+                                <rect key="frame" x="16" y="138" width="167" height="30"/>
+                                <state key="normal" title="向12345@qq.com发邮件">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnClick:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="n5Q-1Y-ED9"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="fve-Cs-Hp4" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="16" id="0QD-T9-lCm"/>
+                            <constraint firstItem="YaP-fA-6fD" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="16" id="1jd-Ox-oKX"/>
+                            <constraint firstItem="ACg-xR-kYI" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" id="CUf-Yj-kWK"/>
+                            <constraint firstItem="Qw3-gE-VoY" firstAttribute="top" secondItem="iXe-31-m43" secondAttribute="bottom" constant="25" id="D3j-gC-zDQ"/>
+                            <constraint firstItem="0Fx-yA-zeh" firstAttribute="top" secondItem="YaP-fA-6fD" secondAttribute="bottom" constant="20" id="I9M-aj-gnq"/>
+                            <constraint firstItem="Qw3-gE-VoY" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="16" id="KJx-Rg-wGI"/>
+                            <constraint firstItem="YaP-fA-6fD" firstAttribute="top" secondItem="fve-Cs-Hp4" secondAttribute="bottom" constant="25" id="Pjb-lU-Gpc"/>
+                            <constraint firstItem="XOi-Jf-YVb" firstAttribute="top" secondItem="e5L-Uv-kHS" secondAttribute="bottom" constant="25" id="R6t-Io-y4e"/>
+                            <constraint firstItem="e5L-Uv-kHS" firstAttribute="top" secondItem="Qw3-gE-VoY" secondAttribute="bottom" constant="25" id="RLj-bU-oxh"/>
+                            <constraint firstItem="iXe-31-m43" firstAttribute="top" secondItem="0Fx-yA-zeh" secondAttribute="bottom" constant="25" id="SuG-7q-scx"/>
+                            <constraint firstItem="XOi-Jf-YVb" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="16" id="Vt2-8U-8UZ"/>
+                            <constraint firstItem="fve-Cs-Hp4" firstAttribute="top" secondItem="xIa-Fd-WEB" secondAttribute="bottom" constant="25" id="WS8-V6-BbQ"/>
+                            <constraint firstItem="xIa-Fd-WEB" firstAttribute="top" secondItem="ACg-xR-kYI" secondAttribute="bottom" constant="25" id="X0h-Se-qy4"/>
+                            <constraint firstItem="ACg-xR-kYI" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="16" id="beM-LL-4TZ"/>
+                            <constraint firstItem="iXe-31-m43" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="16" id="cUU-Js-JY0"/>
+                            <constraint firstItem="e5L-Uv-kHS" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="16" id="h9W-rr-bKH"/>
+                            <constraint firstItem="xIa-Fd-WEB" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="16" id="oix-ey-FsY"/>
+                            <constraint firstItem="0Fx-yA-zeh" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="16" id="ug5-5C-R7a"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138.5" y="368.5"/>
+        </scene>
+    </scenes>
+</document>
